@@ -1,0 +1,5 @@
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\BussinessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\BussinessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.csproj.CoreCompileInputs.cache
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.pdb

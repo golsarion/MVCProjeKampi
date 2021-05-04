@@ -1,0 +1,15 @@
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
