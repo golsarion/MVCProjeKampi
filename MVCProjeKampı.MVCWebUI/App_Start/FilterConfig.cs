@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MVCProjeKampı.MVCWebUI
+namespace MVCProjeKampi.MVCWebUI
 {
     public class FilterConfig
     {

@@ -3,3 +3,16 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\BussinessLa
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.csproj.CoreCompileInputs.cache
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.csprojAssemblyReference.cache
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\BussinessLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\DataAccessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityFramework.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\DataAccessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityFramework.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\BussinessLayer\obj\Debug\BussinessLayer.csproj.CopyComplete

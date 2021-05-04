@@ -14,12 +14,13 @@ namespace DataAccessLayer.Concrete.Repositories
     {
         Context c = new Context();
         DbSet<Writer> _object;
+
         public void Delete(Writer p)
         {
             throw new NotImplementedException();
         }
 
-        public void Get(Expression<Func<Writer, bool>> filter)
+        public Writer Get(Expression<Func<Writer, bool>> filter)
         {
             throw new NotImplementedException();
         }

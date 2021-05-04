@@ -81,3 +81,12 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityFr
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityFramework.SqlServer.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityFramework.xml
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityFramework.SqlServer.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\BussinessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\DataAccessLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityLayer.dll
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\BussinessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\DataAccessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\DataAccessLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\EntityLayer.dll.config
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampı\MVCProjeKampı.MVCWebUI\bin\BussinessLayer.dll.config
