@@ -1,6 +1,9 @@
 ﻿using BussinessLayer.Concrete;
+using BussinessLayer.ValidationRules;
 using DataAccessLayer.Concrete.Repositories;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +14,43 @@ namespace MvcWebUI.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoryManager cm = new CategoryManager();
+        CategoryManager cm = new CategoryManager(new EfCategoryDAL());
         // GET: Category
         public ActionResult Index()
         {
-            
+
             return View();
         }
         public ActionResult GetCategoryList()
         {
-            var categoryvalues = cm.GetAllBL();
+            var categoryvalues = cm.GetCategoryList();
             return View(categoryvalues);
+        }
+        [HttpGet]
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddCategory(Category p)
+        {
+            CategoryValidator categoryValidator = new CategoryValidator();
+            ValidationResult validationResults = categoryValidator.Validate(p);
+            if (validationResults.IsValid)
+            {
+                cm.CategoryAddBL(p);
+                return RedirectToAction("GetCategoryList");
+            }
+            else
+            {
+                foreach (var item in validationResults.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            // cm.CategoryAddBL(p);
+            return View();
         }
     }
 }

@@ -1,0 +1,30 @@
+﻿@using EntityLayer.Concrete
+@model Category
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h1>Yeni Kategory Ekleme Sayfası</h1>
+<br />
+<h3>Hoş Geldiniz</h3>
+@using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
+{
+
+    <div class="form-group panel-body col-md-6">
+        @Html.LabelFor(m => m.CategoryName, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.CategoryName,null,new { @class= "alert-danger" })
+
+        <br />
+
+        @Html.LabelFor(m => m.CategoryDescription, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.CategoryDescription, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.CategoryDescription,null, new { @class = "alert-danger" })
+        <br />
+
+        @Html.LabelFor(m => m.CategoryStatus, new { @class = "form-label" })
+        @Html.CheckBoxFor(m => m.CategoryStatus, new { @class = "checkbox-inline" })
+        <br />
+        <button class="btn btn-success">Kaydet</button>
+    </div>
+}
