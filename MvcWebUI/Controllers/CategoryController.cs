@@ -23,7 +23,7 @@ namespace MvcWebUI.Controllers
         }
         public ActionResult GetCategoryList()
         {
-            var categoryvalues = cm.GetCategoryList();
+            var categoryvalues = cm.GetList();
             return View(categoryvalues);
         }
         [HttpGet]
@@ -38,7 +38,7 @@ namespace MvcWebUI.Controllers
             ValidationResult validationResults = categoryValidator.Validate(p);
             if (validationResults.IsValid)
             {
-                cm.CategoryAddBL(p);
+                cm.Add(p);
                 return RedirectToAction("GetCategoryList");
             }
             else
