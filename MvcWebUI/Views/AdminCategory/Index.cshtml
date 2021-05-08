@@ -1,0 +1,42 @@
+﻿@using EntityLayer.Concrete
+@model IEnumerable<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="float-left">Kategori Listesi</h3>
+        @Html.ActionLink("Yeni Kategori", "AddCategory", null, new { @class = "btn btn-info float-right" })
+    </div>
+    <div class="card-body col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th class="col-md-6">Kategori</th>                    
+                    <th class="col-md-1">Sil</th>
+                    <th class="col-md-1">Güncelle</th>
+                    <th class="col-md-1">Başlıklar</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Category item in Model)
+                {
+                    <tr>
+                        <td>@item.CategoryID</td>
+                        <td>@item.CategoryName</td>                       
+                        <td><a href="#" class="btn btn-danger">Sil</a></td>
+                        <td><a href="#" class="btn btn-warning">Güncelle</a></td>
+                        <td><a href="#" class="btn btn-primary">Başlıklar</a></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

@@ -28,3 +28,5 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessL
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.initializeDB.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

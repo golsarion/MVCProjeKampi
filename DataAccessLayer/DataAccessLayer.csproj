@@ -59,19 +59,25 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
-    <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
-    <Compile Include="Concrete\Repositories\WriterRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDAL.cs" />
     <Compile Include="EntityFramework\EfCategoryDAL.cs" />
     <Compile Include="EntityFramework\EfContactDAL.cs" />
     <Compile Include="EntityFramework\EfContentDAL.cs" />
     <Compile Include="EntityFramework\EfHeadingDAL.cs" />
     <Compile Include="EntityFramework\EfWriterDAL.cs" />
+    <Compile Include="Migrations\202105080531345_initializeDB.cs" />
+    <Compile Include="Migrations\202105080531345_initializeDB.designer.cs">
+      <DependentUpon>202105080531345_initializeDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105080531345_initializeDB.resx">
+      <DependentUpon>202105080531345_initializeDB.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
