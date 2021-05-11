@@ -2,10 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
@@ -30,8 +32,7 @@ namespace DataAccessLayer.Concrete.Repositories
         }
 
         public void Insert(T p)
-        {
-            _object.Add(p);
+        {            
             c.SaveChanges();
         }
 
@@ -47,7 +48,25 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(T p)
         {
+            _object.Attach(p);
+            var entry = c.Entry(p);
+            entry.State = EntityState.Modified;
             c.SaveChanges();
+        }
+
+        public int Count(Expression<Func<T, bool>> filter)
+        {
+            return _object.Count(filter);
+        }
+
+        public int Count()
+        {
+            return _object.Count();
+        }
+
+        public int Max(Expression<Func<T, int>> filter)
+        {
+            return _object.Max(filter);
         }
     }
 }

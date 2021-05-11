@@ -16,5 +16,8 @@ namespace DataAccessLayer.Abstract
         void Delete(T p);
         List<T> List(Expression<Func<T, bool>> filter);
         T Get(Expression<Func<T, bool>> filter);
+        int Count();
+        int Count(Expression<Func<T,bool>> filter);
+        int Max(Expression<Func<T, int>> filter);
     }
 }

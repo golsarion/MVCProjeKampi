@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>@ViewBag.CategoryCount</h3>
+
+                    <p>Kategori Vardır</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="small-box bg-gradient-secondary">
+                <div class="inner">
+                    <h3> @ViewBag.HeadingCount</h3>
+
+                    <p>Yazılım Kategorisine Ait Başlık</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="small-box bg-gradient-green">
+                <div class="inner">
+                    <h3>@ViewBag.WriterCount</h3>
+
+                    <p>Adında "a" Harfi Geçen Yazar</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="small-box bg-gradient-indigo">
+                <div class="inner">
+                    <h3>@ViewBag.MostPopularCategory</h3>
+
+                    <p>En Fazla Başlığa Sahip Kategory</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="small-box bg-fuchsia">
+                <div class="inner">
+                    <h3>@ViewBag.Categorytruefalsefark</h3>
+
+                    <p>Durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+

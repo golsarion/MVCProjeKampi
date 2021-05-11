@@ -1,32 +1,33 @@
 ﻿@using EntityLayer.Concrete
 @model Category
 @{
-    ViewBag.Title = "AddCategory";
+    ViewBag.Title = "EditCategory";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="card col-md-8">
     <div class="card-header">
-        <h1>Yeni Kategori Ekleme Sayfası</h1>
+        <h1>Yeni Kategori Güncelleme Sayfası</h1>
     </div>
-    @using (Html.BeginForm("AddCategory", "AdminCategory", FormMethod.Post))
+    @using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
     {
         <div class="form-group card-body col-md-12">
-            @Html.LabelFor(m => m.CategoryName, new { @class = "form-label" })
+            @Html.HiddenFor(m=>m.CategoryID)
+            @Html.LabelFor(m => m.CategoryName,"Kategori Adı", new { @class = "form-label" })
             @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control" })
             @Html.ValidationMessageFor(m => m.CategoryName, null, new { @class = "alert-danger" })
 
             <br />
 
-            @Html.LabelFor(m => m.CategoryDescription, new { @class = "form-label" })
+            @Html.LabelFor(m => m.CategoryDescription,"Kategori Açıklaması", new { @class = "form-label" })
             @Html.TextBoxFor(m => m.CategoryDescription, new { @class = "form-control" })
             @Html.ValidationMessageFor(m => m.CategoryDescription, null, new { @class = "alert-danger" })
             <br />
 
-            @Html.LabelFor(m => m.CategoryStatus, new { @class = "form-label" })
+            @Html.LabelFor(m => m.CategoryStatus,"Kategori Durumu", new { @class = "form-label" })
             @Html.CheckBoxFor(m => m.CategoryStatus, new { @class = "checkbox-inline" })
             <br />
-            <button class="btn btn-success float-right">Kaydet</button>
+            <button class="btn btn-success float-right">Güncelle</button>
         </div>
     }
 </div>
