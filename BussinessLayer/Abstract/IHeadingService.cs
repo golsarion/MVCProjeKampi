@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.Abstract
 {
-    public interface IHeadingService:IbussinessService<Heading>
+    public interface IHeadingService:IBussinessService<Heading>
     {
+        List<Heading> GetListByWriter(int WriterID);
     }
 }

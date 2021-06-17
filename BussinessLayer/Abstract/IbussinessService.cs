@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.Abstract
 {
-    public interface IbussinessService<T>
+    public interface IBussinessService<T>
     {
         List<T> GetList();
+        List<T> GetList(Expression<Func<T, bool>> filter);
+        List<T> GetListActives();
         void Add(T parameter);
         T GetByID(int id);
         void Delete(T parameter);

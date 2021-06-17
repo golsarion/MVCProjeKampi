@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.Abstract
 {
-    interface IWriterService:IbussinessService<Writer>
+    public interface IWriterService:IBussinessService<Writer>
     {
+        Writer Login(string username, string password);
+        string[] GetRoles(string UserName);
+        void LogOut(string username);
+        Writer GetWriterByUsername(string Username);
     }
 }

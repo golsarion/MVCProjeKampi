@@ -30,3 +30,15 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessL
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.initializeDB.resources
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.add_Writer_Features.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writerstatus_add.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writerimageup.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_content_status_add.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_heading_status_add.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_add.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mid_contactdateadd.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_ImageFile_Table.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.add_admin_table.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.add_message_is_read.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addwritersskills.resources
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addwritersskills_skillpercent.resources

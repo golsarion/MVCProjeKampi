@@ -1,0 +1,57 @@
+﻿@using EntityLayer.Concrete
+@model List<Content>
+@{
+    ViewBag.Title = "ContentByHeading";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <div class="row">
+        <div class="col">
+            <h2>@(((Heading)ViewBag.Heading).HeadingName)</h2>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="row pl-4">
+        <div class="col-8">
+            <div class="timeline timeline-inverse">
+                @foreach (Content item in Model)
+                {
+                    <!-- timeline time label -->
+                    <div class="time-label">
+                        <span class="bg-success">
+                            @(((DateTime)item.ContentDate).ToString("dd/MMMM/yyyy"))
+                        </span>
+                    </div>
+                    <!-- /.timeline-label -->
+                    <!-- timeline item -->
+                    <div>
+                        <i class="fas fa-comments bg-primary"></i>
+
+                        <div class="timeline-item">
+                            <h3 class="timeline-header text-bold text-primary">@item.Writer.WriterName @item.Writer.WriterSurname</h3>
+                            <div class="timeline-body">
+                                @item.ContentValue
+                            </div>
+                            <div class="timeline-footer">
+                                <a href="#" class="btn btn-primary btn-sm">Daha Fazla</a>
+                                <a href="#" class="btn btn-danger btn-sm">Sil</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                }
+
+            </div>
+        </div>
+    </div>
+    <div class="row pl-4">
+        <div class="col-8">
+            <a href="~/Content/AddContent" class="btn btn-primary"><i aria-hidden="true" class="fa fa-plus-square"></i> Yanıtla</a>
+        </div>
+    </div>
+</section>
+
+

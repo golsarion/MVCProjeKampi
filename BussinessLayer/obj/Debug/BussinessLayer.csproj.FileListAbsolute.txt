@@ -132,3 +132,4 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\BussinessLayer\bin\Debug\System.Xml.X
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\BussinessLayer\bin\Debug\System.Xml.XPath.XDocument.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\BussinessLayer\bin\Debug\FluentValidation.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\BussinessLayer\bin\Debug\FluentValidation.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\BussinessLayer\bin\Debug\EasyEncryption.dll

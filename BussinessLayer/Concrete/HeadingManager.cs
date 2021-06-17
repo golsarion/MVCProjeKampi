@@ -36,7 +36,8 @@ namespace BussinessLayer.Concrete
 
         public void Delete(Heading parameter)
         {
-            _headingDAL.Delete(parameter);
+            parameter.HeadingStatus = false;
+            _headingDAL.Update(parameter);
         }
 
         public Heading GetByID(int id)
@@ -54,6 +55,16 @@ namespace BussinessLayer.Concrete
             return _headingDAL.List();
         }
 
+        public List<Heading> GetList(Expression<Func<Heading, bool>> filter)
+        {
+            return _headingDAL.List(filter);
+        }
+
+        public List<Heading> GetListActives()
+        {
+            return _headingDAL.List(x=>x.HeadingStatus==true);
+        }
+
         public int MaxID(Expression<Func<Heading, int>> filter)
         {
             return _headingDAL.Max(filter);
@@ -62,6 +73,17 @@ namespace BussinessLayer.Concrete
         public void Update(Heading parameter)
         {
             _headingDAL.Update(parameter);
+        }
+        public void Restore(int id)
+        {
+            var restored = GetByID(id);
+            restored.HeadingStatus = true;
+            _headingDAL.Update(restored);
+        }
+
+        public List<Heading> GetListByWriter(int WriterID)
+        {
+            return _headingDAL.List(x => x.WriterID == WriterID);
         }
     }
 }

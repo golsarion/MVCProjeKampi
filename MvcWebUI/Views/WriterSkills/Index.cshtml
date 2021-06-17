@@ -1,0 +1,96 @@
+﻿@using EntityLayer.Concrete
+@model Writer
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@section css{
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--Custom Theme files-->
+    <link href="~/AdminLTE-3.0.4/Skill_Theme/css/style.css" rel="stylesheet" />
+    <!--//Custom Theme files -->
+    <!--web font-->
+    <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!--//web font-->
+    <!--circle-chart-->
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <!--//circle-chart-->
+}
+<div class="mainskill" style="background: url(/AdminLTE-3.0.4/Skill_Theme/images/5.jpg) no-repeat center center fixed">
+    <h1 class="text-white">Yazar Yetenekleri</h1>
+    <div class="main-info w3l">
+
+        @if (Model == null)
+        {
+
+            <div class="main-row">
+                <!-- main-row-one -->
+                <div class="profile-grid logo wthree">
+                    <img src="images/img1.jpg" alt="">
+                    <h2>Yazar Bulunamadı</h2>
+                    <p>...ünvan...</p>
+
+                </div>
+                <h3 class="title">Yetenekler</h3>
+                <div class="col-md-6 skills-right bar_group">
+
+                </div>
+                <!--bar-js-->
+
+                <div class="social-icons agileits">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="be"></a></li>
+                        <li><a href="#" class="gg"></a></li>
+                    </ul>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        }
+        else
+        {
+
+            <div class="main-row">
+                <!-- main-row-one -->
+                <div class="profile-grid logo wthree">
+                    <img src="~/AdminLTE-3.0.4/Skill_Theme/images/img1.jpg" />
+                    <h2>@Model.WriterName @Model.WriterSurname</h2>
+                    <p>@Model.WriterTitle</p>
+
+                </div>
+                <h3 class="title">Yetenekler</h3>
+                <div class="col-md-6 skills-right bar_group">
+                    @foreach (Skill item in (List<Skill>)ViewBag.SkillList)
+                    {
+                        <div class='bar_group__bar thin' style="width:@item.SkillPercent" label='@item.SkillName &nbsp;&nbsp; @item.SkillPercent%' value='@item.SkillPercent'></div>
+                    }
+
+                </div>
+                <!--bar-js-->
+
+                <div class="social-icons agileits">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="be"></a></li>
+                        <li><a href="#" class="gg"></a></li>
+                    </ul>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        }
+
+
+        <!-- copyright -->
+        <div class="copyright">
+            <p> © 2016 Skills Profile Widget . All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts.</a></p>
+        </div>
+        <!-- //copyright -->
+    </div>
+</div>
+@section Scripts{
+    <script src="~/AdminLTE-3.0.4/Skill_Theme/js/bars.js"></script>
+}
+

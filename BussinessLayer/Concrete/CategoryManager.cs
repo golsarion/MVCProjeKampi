@@ -64,5 +64,15 @@ namespace BussinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+
+        public List<Category> GetListActives()
+        {
+            return _categorydal.List(x => x.CategoryStatus == true);
+        }
+
+        public List<Category> GetList(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

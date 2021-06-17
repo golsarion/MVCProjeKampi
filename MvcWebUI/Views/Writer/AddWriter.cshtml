@@ -1,0 +1,94 @@
+﻿@using EntityLayer.Concrete
+@model Writer
+@{
+    ViewBag.Title = "AddWriter";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content p-2">    
+    <div class="container-fluid">
+        <div class="card col-sm-12 col-12 col-md-10 col-lg-10">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">YENİ YAZAR EKLEME SAYFASI</h1>
+                    </div>
+                </div>
+            </div>
+            @using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post))
+            {
+                <div class="form-group card-body col-md-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterName, "Adı", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterName, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterSurname, "Soyadı", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterSurname, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterSurname, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterMail, "Mail", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterMail, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterMail, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterPassword, "Şifre", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterPassword, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterPassword, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterTitle, "Ünvanı", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterTitle, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterTitle, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterImage, "Görsel Linki", new { @class = "form-label" })
+                                @Html.TextBoxFor(m => m.WriterImage, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterImage, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.WriterAbout, "Hakkında", new { @class = "form-label" })
+                                @Html.TextAreaFor(m => m.WriterAbout, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WriterAbout, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <button class="btn btn-success float-right">Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@section scripts{
+
+}
+
+

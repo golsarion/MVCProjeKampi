@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace MvcWebUI.Controllers
 {
+    [Authorize(Roles ="A")]
     public class AdminCategoryController : Controller
     {
         CategoryManager _categoryManager = new CategoryManager(new EfCategoryDAL());

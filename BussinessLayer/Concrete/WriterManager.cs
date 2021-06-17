@@ -7,6 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Security;
 
 namespace BussinessLayer.Concrete
 {
@@ -52,6 +53,39 @@ namespace BussinessLayer.Concrete
         public List<Writer> GetList()
         {
             return _writerDAL.List();
+        }
+
+        public List<Writer> GetList(Expression<Func<Writer, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Writer> GetListActives()
+        {
+            return _writerDAL.List(x => x.WriterStatus == true);
+        }
+
+        public string[] GetRoles(string UserName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Writer GetWriterByUsername(string Username)
+        {
+            return _writerDAL.Get(x => x.WriterMail == Username);
+        }
+
+        public Writer Login(string username, string password)
+        {
+            var hashedpassword = EasyEncryption.MD5.ComputeMD5Hash(password);
+            var Writeruserinfo = _writerDAL.Get(x => x.WriterMail == username && x.WriterPassword == hashedpassword);
+            FormsAuthentication.SetAuthCookie(Writeruserinfo.WriterMail, false);
+            return Writeruserinfo;
+        }
+
+        public void LogOut(string username)
+        {
+            FormsAuthentication.SignOut();
         }
 
         public int MaxID(Expression<Func<Writer, int>> filter)

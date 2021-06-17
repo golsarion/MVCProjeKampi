@@ -188,3 +188,4 @@ E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\MvcWebUI\bin\System.Xml.XPath.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\MvcWebUI\bin\System.Xml.XPath.XDocument.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\MvcWebUI\bin\FluentValidation.dll
 E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\MvcWebUI\bin\FluentValidation.xml
+E:\Yedek\Desktop\WEB Calisma\MVCProjeKampi\MvcWebUI\bin\EasyEncryption.dll

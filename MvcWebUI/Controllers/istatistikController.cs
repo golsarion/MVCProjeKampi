@@ -28,8 +28,7 @@ namespace MvcWebUI.Controllers
             ViewBag.MostPopularCategory = _cm.GetByID(maxcatid).CategoryName;
             var truecat = _cm.Count(x => x.CategoryStatus == true);
             var falsecat = _cm.Count(x => x.CategoryStatus == false);
-            int sonuc=0;
-            string mesaj = "";
+            int sonuc=0;            
             if (truecat>=falsecat)
             {
                 sonuc = truecat - falsecat;               

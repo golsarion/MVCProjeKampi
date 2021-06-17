@@ -1,0 +1,53 @@
+﻿@using EntityLayer.Concrete
+@model Heading
+@{
+    ViewBag.Title = "EditHeading";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<section class="content-header">
+    <h2 class="text-center"></h2>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="card col-8">
+            <div class="card-header">
+                <h3 class="text-center text-bold">Başlık Değişiklik Formu</h3>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("EditHeading", "Heading", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                @Html.HiddenFor(x=>x.HeadingID)
+                                @Html.HiddenFor(x=>x.HeadingDate)
+                                @Html.HiddenFor(x=>x.WriterID)
+                                @Html.LabelFor(x => x.HeadingName, "Başlık", new { @class = "form-label" })
+                                @Html.TextBoxFor(x => x.HeadingName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(x => x.HeadingName, null, new { @class = "alert-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                @Html.LabelFor(x => x.CategoryID, "Kategori", new { @class = "form-label" })
+                                @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.Categories, new { @class = "form-control" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success float-right"><i aria-hidden="true" class="fa fa-save"></i> Kaydet</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+
